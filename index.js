@@ -530,8 +530,8 @@ function getDaysDifference(startDate, endDate) {
   // Якщо startDate або endDate не є об'єктами Date, повертаємо рядок
   // "Помилка: вхідне значення має бути об'єктом Date"
   if (
-    typeof startDate.getTime() !== 'number' ||
-    typeof endDate.getTime() !== 'number'
+    typeof startDate.getTime !== 'function' ||
+    typeof endDate.getTime !== 'function'
   ) {
     return `Помилка: вхідне значення має бути об'єктом Date`
   } else {
